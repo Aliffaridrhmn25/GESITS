@@ -1,0 +1,401 @@
+:root {
+  --font-utama: "Saira Condensed", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Saira Condensed", sans-serif;
+}
+/* Body */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Saira Condensed", sans-serif;
+}
+/* End Body */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #f7f7f7;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1.5);
+}
+.navbar a {
+  font-family: "Saira Condensed", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar .navbar-nav a {
+  padding-top: 10px;
+  display: inline-block; /* Menggunakan inline-block bukan display-inline */
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #413d3d;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block; /* Menambahkan display: block */
+  height: 3px;
+  width: 100%;
+  background-color: #000000;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scale(1);
+}
+.navbar-logo {
+  width: 100px;
+  height: auto;
+}
+.navbar .navbar-extra img {
+  margin: 0 0.5rem;
+  width: 100px;
+  margin: auto;
+}
+/* End Navbar */
+/* Home */
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("images/home.jpg");
+  background-size: cover; /* Mengubah ukuran gambar agar mencakup seluruh area */
+  background-repeat: no-repeat; /* Mencegah pengulangan gambar latar belakang */
+  background-position: center; /* Posisi gambar latar belakang di tengah */
+  margin: -100px -20px;
+  min-height: 115vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+.home .row {
+  display: flex;
+}
+.home .content {
+  display: inline-flex;
+  padding: 0;
+  margin-top: 130px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Saira Condensed", sans-serif;
+}
+.home .content .content1 {
+  background-color: rgba(20, 20, 20, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px; /* Menyamakan lebar dengan content2 */
+  height: 300px; /* Menyamakan tinggi dengan content2 */
+  border-radius: 0 25px 25px 0;
+}
+.content .content1 h3 {
+  position: absolute;
+  padding: 0;
+  margin-bottom: 200px;
+  margin-left: 370px;
+  color: rgb(238, 238, 238);
+  font-size: 40px;
+  width: 500px;
+}
+.content .content1 h4 {
+  position: absolute;
+  color: #b53535;
+  font-size: 20px;
+  padding: none;
+  margin-left: 375px;
+  margin-top: 200px;
+}
+.content ol {
+  padding-left: -12px;
+  list-style: none;
+}
+.content1 li {
+  text-indent: 0.5px;
+  margin-left: 90px;
+  font-size: 20px;
+}
+.content1 ol,
+li {
+  color: rgb(210, 210, 210);
+  text-align: justify;
+}
+
+.content1 img {
+  margin-left: -120px;
+  width: 400px;
+  height: 350px;
+}
+.home .content .content2 {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(247, 247, 247, 0.4);
+  width: 500px;
+  padding: 20px;
+  height: auto; /* Menghilangkan ketinggian tetap */
+  max-height: 300px; /* Batasan tinggi konten */
+  /* Menggeser konten ke tepi kanan */
+  border-radius: 25px 0 0 25px;
+}
+.content2 .mumu {
+  width: 150px;
+  line-height: 1;
+  padding: 0;
+  margin-right: 300px;
+  margin-bottom: 30px;
+}
+.content2 button {
+  color: black;
+  background-color: whitesmoke;
+  padding: 0;
+  margin-top: 20px;
+  width: 110px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.content2 h6 {
+  padding: 0;
+  font-size: 50px;
+  line-height: 1;
+  color: #f7f7f7;
+  margin-bottom: 20px;
+}
+.content h2 {
+  padding: 0;
+  font-size: 50px;
+  color: rgb(207, 25, 25);
+  line-height: 1;
+}
+
+/* End Home */
+/* Produk */
+.produk {
+  margin: -100px -20px;
+  min-height: 110vh;
+  align-items: center;
+  padding: 100px 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: -60px;
+  margin-bottom: 10px;
+}
+.produk .row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.produk .row .produk-card img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+}
+.produk .row .produk-card {
+  text-align: center;
+  padding-top: -40px;
+  margin-bottom: 10px;
+}
+.produk .row .produk-card img {
+  width: 400px;
+}
+.produk .hero h1 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+.produk .logolkpp img {
+  margin-top: 30px;
+  margin-left: 60px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* End Produk */
+/* Tentang */
+.tentang {
+  background-color: rgb(207, 25, 25);
+  margin: -100px -20px;
+  min-height: 110vh;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+.tentang .aboutcontaint .candy img {
+  border-radius: 25px;
+}
+.tentang .aboutcontaint {
+  display: flex;
+  justify-content: center;
+}
+.tentang .aboutcontaint .text h3 {
+  padding-bottom: 15px;
+  padding-top: 20px;
+  font-size: 30px;
+  color: #edecec;
+}
+.tentang .aboutcontaint .text p {
+  padding-bottom: 20px;
+  font-size: 19px;
+}
+.aboutcontaint .text {
+  padding-right: 200px;
+  padding-top: 50px;
+  margin-left: -140px;
+}
+.aboutcontaint .text p {
+  text-align: justify;
+  padding-right: 11px;
+  color: #efeaea;
+  width: 500px;
+}
+.tentang h6 {
+  font-size: 28px;
+  color: #f7f7f7;
+  font-family: "Saira Condensed", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.tentang .candy h3 {
+  font-size: 30px;
+  color: #f7f7f7;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.tentang .candy {
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+}
+
+/* End tentang */
+/* Kontak */
+.kontak {
+  margin: -100px -20px;
+  min-height: 110vh;
+  padding: 100px 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+.kontak h6 {
+  font-size: 25px;
+}
+fieldset {
+  margin-top: 90px;
+  border: none;
+  padding-left: 90px;
+}
+.isi {
+  display: flex;
+}
+
+form {
+  background-color: transparent;
+  width: 500px;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  padding: none;
+}
+.form-data {
+  padding-top: 50px;
+}
+.form-data .checkbox-container {
+  padding: 0;
+  display: flex;
+  margin: 0;
+  width: 500px;
+  padding-bottom: 40px;
+}
+.form-data .checkbox-container label {
+  position: absolute;
+  margin-left: 40px;
+}
+.form-data .checkbox-container #status {
+  margin-right: 450px;
+  margin-top: 10px;
+}
+.form-data input {
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.maps {
+  padding-left: 100px;
+  margin-top: 100px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #383838;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #374f66;
+}
+/* End Kontak */
+/* Footer */
+footer {
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+/* End Footer */
