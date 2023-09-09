@@ -1,5 +1,5 @@
-# Landing-Page-GESIT
-Landing Page ini dirancang untuk pengambilan nilai dari tugas Mata kuliah E-Business dengan Tema GESIT Karya Anak Bangsa, GESIT sendiri merupakan sebuah perusahaan yang menghasilkan motor listrik yang ramah lingkungan, landing page ini di rancang dengan bantuan HTML, CSS dan JavaScript.
+# Company-Profile-GESIT
+Company Profile ini dirancang untuk pengambilan nilai dari tugas Mata kuliah E-Business dengan Tema GESIT Karya Anak Bangsa, GESIT sendiri merupakan sebuah perusahaan yang menghasilkan motor listrik yang ramah lingkungan, landing page ini di rancang dengan bantuan HTML, CSS dan JavaScript.
 
 - Tampilan Home 
 ![home](https://github.com/Aliffaridrhmn25/Landing-Page-GESIT/assets/135413797/8052d683-0c87-48e3-b9dc-83ca73fca8d8)
