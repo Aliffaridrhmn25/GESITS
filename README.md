@@ -1,4 +1,4 @@
-# GESITS
+GESITS
 Company Profile ini dirancang untuk pengambilan nilai dari tugas Mata kuliah E-Business dengan Tema GESIT Karya Anak Bangsa, GESIT sendiri merupakan sebuah perusahaan yang menghasilkan motor listrik yang ramah lingkungan, landing page ini di rancang dengan bantuan HTML, CSS dan JavaScript.
 
 - Tampilan Home 
